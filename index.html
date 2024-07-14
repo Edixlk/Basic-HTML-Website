@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is some text</title>
+        <style>
+            body {
+                background-color: rgb(11, 71, 202);
+                color: white;
+                padding: 0.3em 3em;
+            }
+
+            li, a  {
+                text-decoration: none;
+                text-decoration: underline;
+            }
+
+            a:link {
+                color: black;
+            }
+
+            a:visited {
+                color: rgb(0, 255, 0);
+            }
+
+            header {
+                background-color: green;
+                padding: 5px;
+                width: 200px;
+                color: white;
+            }
+
+        </style>
+        <body>
+            <header title="That does not work at all..">No. of people visited: <b style="color: yellow;" id="count"></b></header>
+             <h1><em style="color: rgb(255, 183, 0);">Welcome</em> to my website</h1>
+             <hr>
+
+             <p>
+                There is nothing much here. This is my basic website made from only <abbr style="color: rgb(255, 136, 0);" title="hypertext markup language">HTML</abbr> with internal <abbr style="color: rgb(0, 255, 221);" title="Cascading Sytle Sheets">CSS.</abbr> <br> It's only a basic one, nothing fancy with a bit of javascript also. Click this button to test out the javascript: 
+                <button id="btn">Click me </button> <br> <br>
+                <i id="result" style="color: rgb(0, 255, 0);"></i>
+
+             </p>
+
+             <br>
+
+             <h2> The <i style="color: rgb(212, 0, 255);">Email</i></h2>
+             <hr>
+
+             <p>This is a email button. You can send this to send me an email. br when it is <i>clicked.</i> Click the button to send me a email.</p>
+    
+             <button><a href="mailto:Antione_657outlook.com" style="text-decoration: none;">Email me </a></button>
+
+             <br>      
+             <br>       
+
+             <h2>More <i  style="color: rgb(248, 207, 2);">Stuff</i></h2>
+             <hr>
+             
+             <ul>
+                <li><a href="img.html">Images</a></li>
+                <br>
+                <li><a href="vid.html">Videos</a></li>
+                <br>
+                <li><a href="anim.html">Animation</a></li>
+            </ul>
+
+               
+           <!-- Javascript -->
+
+           <script>
+                document.getElementById("btn").onclick = function () {
+
+                    document.getElementById("result").textContent = "It works now! That's a good sign."
+                }
+
+                document.getElementById("count").textContent = "0"
+           </script>
+        </body>
+    </head>
+</html>
